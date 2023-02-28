@@ -3,7 +3,7 @@ import React from "react";
 import { View } from "react-native";
 
 const Sidebar: React.FC<DrawerContentComponentProps> =() => {
-    return <View></View>
+    return <View style={{ backgroundColor:'pink', flex:1}}></View>
 }
 
 export default Sidebar
