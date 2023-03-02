@@ -19,7 +19,7 @@ const p ={
 }
 
 const theme = createTheme({
-    spacing:{
+    spacing: {
         '0': 0,
         xs: 4,
         sm: 8,
