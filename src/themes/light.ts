@@ -42,7 +42,11 @@ const theme = createTheme({
         $primary: p.blue70,
         $windowBackground: '#f0f0f0',
         $background: p.paper10,
-        $foreground: p.paper900
+        $foreground: p.paper900,
+        $sidebarBackground: p.navy20,
+        $sidebarForeground: p.navy900,
+        $sidebarSeparator: p.paper00 + '20'
+
     },
     borderRadii:{
         xs:4,
