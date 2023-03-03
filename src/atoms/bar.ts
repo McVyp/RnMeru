@@ -1,0 +1,11 @@
+import { VariantProps, createRestyleComponent, createVariant } from "@shopify/restyle";
+import { Animated } from "react-native";
+import { Theme } from "../themes";
+import Box, { BoxProps } from "./box";
+
+const Bar = createRestyleComponent<
+            VariantProps<Theme, 'barVariants'> & BoxProps,
+            Theme
+        >([createVariant({ themeKey: 'barVariants'})], Box)
+
+export default Bar
