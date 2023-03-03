@@ -11,6 +11,7 @@ export default function MainScreen() {
             <HeaderBar>
                 <FeatherIcon name="menu" size={22} />
                 <FeatherIcon name="more-vertical" size={22} />
+                
             </HeaderBar>
         </Container>
     )
