@@ -70,7 +70,8 @@ const theme = createTheme({
             bg: '$headerBarBackground',
             borderRadius: 'hg'
         }
-    }
+    },
+    
 })
 export default theme
 
