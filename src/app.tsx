@@ -1,16 +1,17 @@
 import { NavigationContainer} from "@react-navigation/native";
 import {ThemeProvider} from '@shopify/restyle';
 import React from "react";
-import { Text, View } from "react-native";
 import Navigations from "./navs";
-import light from "./themes/light";
 import StatusBar from "./components/status-bar";
+import { activeThemeAtom } from "./states/theme";
+import {useAtom} from 'jotai'
 
 
 const App =() => {
+    const [activeTheme] = useAtom(activeThemeAtom)
     return(
         <NavigationContainer>
-            <ThemeProvider theme={light}>
+            <ThemeProvider theme={activeTheme}>
                 <StatusBar />
                 <Navigations />
             </ThemeProvider>
