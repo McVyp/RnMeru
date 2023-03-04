@@ -56,6 +56,9 @@ const theme = createTheme({
         lg: 64,
         hg: 128
     },
+    statusBar:{
+        barStyle: 'dark-content' as StatusBarStyle,
+    },
     textVariants:{
         defaults:{
             color: '$foreground',
@@ -71,7 +74,7 @@ const theme = createTheme({
             borderRadius: 'hg'
         }
     },
-    
+
 })
 export default theme
 
