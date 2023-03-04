@@ -21,7 +21,7 @@ interface BackViewProps {
 
 interface Props extends Pick<PanGestureHandlerProps, 'simultaneousHandlers'>,
 AnimatedBoxProps {
-    chidlren: React.ReactNode
+    children: React.ReactNode
         backView?: React.ReactNode | React.FC<BackViewProps>
         onSwipeLeft?:(conceal: SwipeLeftCallback) => any
         revealed?: boolean

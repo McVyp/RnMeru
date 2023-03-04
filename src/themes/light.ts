@@ -1,9 +1,11 @@
 import { createTheme } from "@shopify/restyle";
+import { StatusBarStyle } from "react-native";
 import { color } from "react-native-reanimated";
 
 // pallete
 
 const p ={
+    white: 'white',
     black : 'black',
     red: 'red',
     blue: 'blue',
@@ -34,6 +36,7 @@ const theme = createTheme({
         tablet: 768,
     },
     colors:{
+        white: p.white,
         black: p.black,
         red: p.red,
         blue: p.blue,
