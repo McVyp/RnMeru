@@ -20,7 +20,9 @@ export default function MainScreen({navigation}: Props) {
         <Container justifyContent="center" alignItems="center">
             <NoteList />
             <HeaderBar>
-                <TouchableOpacity m="xs" p="xs" rippleBorderless onPress={handleSidebarToggle}>
+                <TouchableOpacity 
+                    m="xs" p="xs" rippleBorderless onPress={handleSidebarToggle}
+                >
                     <FeatherIcon name="menu" size={22} />
                 </TouchableOpacity>
                 <Box flex={1} alignItems="center">
