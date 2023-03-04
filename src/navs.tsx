@@ -4,6 +4,7 @@ import React from "react";
 import MainScreen from "./screens/main";
 import Sidebar from "./components/sidebar";
 import { NavigatorScreenParams } from "@react-navigation/native";
+import DetailScreen from "./screens/detail";
 
 export type HomeDrawerParamList = {
     Main:{}
@@ -46,6 +47,12 @@ export default function Navigations(){
                 component={Home} 
                 options={{
                     headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="Detail"
+                component={DetailScreen}
+                options={{
                 }}
             />
         </Stack.Navigator>
