@@ -55,7 +55,7 @@ const SwipeableView = forwardRef<SwipeableViewHandle, Props>((props, ref) => {
             const shouldBeDismissed = translateX. value < SWIPE_THRESHOLD
             if(shouldBeDismissed) {
                 translateX.value= withTiming(-1)
-                runOnJS(invokeSwipeLeft)
+                runOnJS(invokeSwipeLeft)()
             }else{
                 translateX.value = withTiming(0)
             }
