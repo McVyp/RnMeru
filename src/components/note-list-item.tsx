@@ -32,7 +32,7 @@ const NoteListItem: React.FC<ListItemProps> = props =>{
                     </Text>
                     <Text 
                         ellipsizeMode='tail' 
-                        numberOfLines={3} 
+                        numberOfLines={2} 
                         fontSize={14} 
                         opacity={0.7}
                     >
