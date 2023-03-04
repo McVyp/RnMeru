@@ -1,6 +1,5 @@
 import { atom } from "jotai"
-import { ThemeNames, themes } from "../themes"
-import { Theme } from "@react-navigation/native"
+import { Theme, ThemeNames, themes } from "../themes"
 
 const activeThemeId = atom<ThemeNames>('dark')
 
