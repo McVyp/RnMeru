@@ -31,6 +31,5 @@ export const themes: readonly ThemeMeta[] = [
         name: 'Solarized Dark',
         theme: solarizedDark
     }
-
 ]
 export type {Theme}
