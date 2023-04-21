@@ -10,6 +10,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import useStickyHeader from "../hooks/use-sticky-header";
 import MoveNoteSheet from "../components/move-note-sheet";
 import ThemePicker from "../components/theme-picker";
+import NoteListHeaderTitleBar from "../components/note-list-titlebar";
 
 type Props = CompositeScreenProps<
     DrawerScreenProps<HomeDrawerParamList, 'Main'>,
@@ -65,6 +66,7 @@ export default function MainScreen({navigation}: Props) {
                 onScroll={handleScroll} 
                 onItemPress={handleNoteListItemPress}
                 onItemSwipeLeft={handleNoteListItemSwipeLeft}
+                ListHeaderComponent={NoteListHeaderTitleBar}
             />
             <HeaderBar style={headerBarStyle} onLayout={handleNoteListLayout}>
                 <TouchableOpacity 

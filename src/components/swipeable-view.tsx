@@ -15,7 +15,7 @@ import { Box } from '../atoms';
 
 type SwipeLeftCallback = () => any
 
-interface BackViewProps {
+export interface BackViewProps {
     progress: Readonly<SharedValue<number>>
 }
 
