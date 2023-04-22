@@ -3,7 +3,7 @@ import { Bar } from '../atoms';
 import AnimatedBox, { AnimatedBoxProps } from '../atoms/animated-box';
 
 
-const HeaderBar: React.FC<AnimatedBoxProps> = ({children, ...rest}) => {
+const HeaderBar: React.FC<AnimatedBoxProps &{ children: React.ReactNode}> = ({children, ...rest}) => {
     return (
         <AnimatedBox position="absolute" top={0} left={0} right={0} {...rest}>
             <Bar 
