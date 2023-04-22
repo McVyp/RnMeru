@@ -5,6 +5,7 @@ import AnimatedBox from "./animated-box";
 import Bar from "./bar";
 import Pressable from "./pressable";
 import Touchable, {TouchableOpacity} from "./touchable";
+import TextInput from "./text-input";
 
 export {
     Box, 
@@ -14,5 +15,6 @@ export {
     Bar, 
     Pressable,
     Touchable,
-    TouchableOpacity
+    TouchableOpacity,
+    TextInput
 }
