@@ -2,7 +2,7 @@ import { createTheme } from '@shopify/restyle'
 import { StatusBarStyle } from 'react-native'
 import light, { Theme } from './light'
 
-// palette
+// Palette
 const p = {
   slate00: '#1b1c1d',
   slate10: '#202225',

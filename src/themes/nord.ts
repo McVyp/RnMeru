@@ -2,26 +2,26 @@ import { createTheme } from '@shopify/restyle'
 import { StatusBarStyle } from 'react-native'
 import light, { Theme } from './light'
 
-// palette
+// Palette
 const p = {
-  // polar night
+  // Polar Night
   nord0: '#2E3440',
   nord1: '#3B4252',
   nord2: '#434C5E',
   nord3: '#4C566A',
 
-  // snow storm
+  // Snow Storm
   nord4: '#D8DEE9',
   nord5: '#E5E9F0',
   nord6: '#ECEFF4',
 
-  // frost
+  // Frost
   nord7: '#8FBCBB',
   nord8: '#88C0D0',
   nord9: '#81A1C1',
   nord10: '#5E81AC',
 
-  // aurora
+  // Aurora
   nord11: '#BF616A',
   nord12: '#D08770',
   nord13: '#EBCB8B',

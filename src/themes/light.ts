@@ -1,7 +1,7 @@
 import { createTheme } from '@shopify/restyle'
 import { StatusBarStyle } from 'react-native'
 
-// palette
+// Palette
 const p = {
   white: 'white',
   black: 'black',
