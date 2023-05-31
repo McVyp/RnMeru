@@ -36,7 +36,7 @@ const ThemeListItem: React.FC<Props> = ({ theme, onPress}) =>{
                     <FeatherIcon size={20} name="check" color="$primary" />
                 ): null}
             </Box>
-            <Text>{theme.name}</Text>
+            <Text color="$sidebarForeground">{theme.name}</Text>
         </TouchableOpacity>
     )
 }

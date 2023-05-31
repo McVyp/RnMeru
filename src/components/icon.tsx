@@ -4,7 +4,7 @@ import { Theme } from '../themes';
 import Feather from 'react-native-vector-icons/Feather'
 
 
-export type IconProps = React.Component<typeof Feather>
+export type IconProps = React.ComponentProps<typeof Feather>
 type Props =Omit<IconProps, 'color'> & ColorProps<Theme>
 
 const FeatherIcon: React.FC<Props> = ({ color = '$foreground', ...rest}) =>{

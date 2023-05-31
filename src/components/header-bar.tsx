@@ -38,7 +38,7 @@ const HeaderBar: React.FC<AnimatedBoxProps> = (props) => {
                     fontSize={18} 
                     autoCapitalize="none"
                     color="$foreground"
-                    placeholder='Serach...'
+                    placeholder='Search...'
                     placeholderColor="$fieldInputPlaceholderTextColor"
                     value={searchQuery}
                     onFocus={handleSearchInputFocus}
