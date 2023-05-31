@@ -5,6 +5,7 @@ import MainScreen from "./screens/main";
 import Sidebar from "./components/sidebar";
 import { NavigatorScreenParams } from "@react-navigation/native";
 import DetailScreen from "./screens/detail";
+import useDrawerEnabled from "./hooks/drawer-enabled";
 
 export type HomeDrawerParamList = {
     Main:{}
@@ -21,11 +22,13 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const Drawer = createDrawerNavigator<HomeDrawerParamList>();
 
 function Home() {
+    const swipeEnabled = useDrawerEnabled() 
     return(
         <Drawer.Navigator initialRouteName="Main"
             screenOptions={{
                 drawerType: 'back',
-                swipeEdgeWidth: 200
+                swipeEdgeWidth: 200,
+                swipeEnabled
             }}
             drawerContent={props => <Sidebar {...props}/>}
         >
