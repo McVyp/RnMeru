@@ -20,6 +20,13 @@ const HeaderBarLeftButton: React.FC<Props> = props => {
         })
 
     }), [backButtonVisible])
+
+    const backButtonStyle = useAnimatedStyle(()=> ({
+        transform :[
+            {rotateZ: withTiming(backButtonVisible? '0deg' : '180deg')}
+        ],
+        opacity:withTiming(backButtonVisible? 1: 0, {easing: Easing.in(Easing.quad)})
+    }), [backButtonVisible])
     return(
         <TouchableOpacity
             m="xs"
@@ -37,7 +44,14 @@ const HeaderBarLeftButton: React.FC<Props> = props => {
             >
                 <FeatherIcon name='menu' size={22} />
             </AnimatedBox>
-            <AnimatedBox position="absolute" width={30} height={30} alignItems="center" justifyContent="center">
+            <AnimatedBox 
+                position="absolute" 
+                width={30} 
+                height={30} 
+                alignItems="center" 
+                justifyContent="center"
+                style={backButtonStyle}
+            >
                 <FeatherIcon name='arrow-left' size={22} />
             </AnimatedBox>
             <Box width={22} height={22}/>
