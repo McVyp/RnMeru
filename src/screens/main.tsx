@@ -58,7 +58,11 @@ export default function MainScreen({navigation}: Props) {
                 onItemSwipeLeft={handleNoteListItemSwipeLeft}
                 ListHeaderComponent={NoteListHeaderTitleBar}
             />
-            <HeaderBar style={headerBarStyle} onLayout={handleNoteListLayout}>
+            <HeaderBar 
+                style={headerBarStyle} 
+                onLayout={handleNoteListLayout}
+                onSideBarToggle= {handleSidebarToggle}
+            >
             </HeaderBar>
             <MoveNoteSheet ref={refMoveNoteSheet} onClose={handleMoveNoteSheetClose}/>
         </Container>
